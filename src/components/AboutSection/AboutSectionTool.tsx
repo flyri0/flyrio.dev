@@ -18,7 +18,7 @@ export default function AboutSectionTool({
         href={href}
         target="_blank"
         className="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight">
-        <Icon /> <p>{inlineText}</p>
+        <Icon /> <p className="hidden md:block">{inlineText}</p>
       </a>
     </IconContext.Provider>
   );
