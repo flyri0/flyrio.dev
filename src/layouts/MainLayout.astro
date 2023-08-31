@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import BaseHead from '@components/BaseHead.astro';
 
 interface Props {
@@ -9,13 +10,14 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <BaseHead>
       <meta name="description" content={description} />
       <link rel="icon" type="image/ico" href="/favicon.ico" />
       <title>{title} | flyrio.dev</title>
+      <ViewTransitions />
     </BaseHead>
   </head>
   <body
