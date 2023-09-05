@@ -1,12 +1,14 @@
 ---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
 import MainLayout from '@layouts/MainLayout.astro';
 import Footer from '@components/Footer';
 import TagList from '@components/TagList';
 import Link from '@components/Link';
 import Navbar from '@components/Navbar';
 import { MdWeb, MdCode } from 'react-icons/md/index.js';
-import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
 
 interface Props {
   project: CollectionEntry<'projects'>;
@@ -31,10 +33,12 @@ export async function getStaticPaths() {
   <Navbar client:load />
 
   <div class="px-8 py-5 font-spaceGrotesk md:px-40 lg:px-52 xl:px-80">
-    <img
-      class="aria-hidden mt-20 py-10"
-      role="presentation"
+    <Image
       src={project.data.banner.src}
+      alt={project.data.image.alt}
+      class="mt-20 py-10"
+      width="764"
+      height="374"
     />
 
     <h1 class="pb-3 text-5xl font-bold">{project.data.title}</h1>
