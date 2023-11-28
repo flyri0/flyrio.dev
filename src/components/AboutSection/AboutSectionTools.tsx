@@ -1,9 +1,10 @@
 import {
   SiJavascript,
-  SiReact,
+  SiTypescript,
   SiTailwindcss,
-  SiNextdotjs,
-  SiVuedotjs,
+  SiNodedotjs,
+  SiGit,
+  SiVisualstudiocode,
 } from 'react-icons/si/index';
 
 import AboutSectionTool from '@components/AboutSection/AboutSectionTool';
@@ -18,31 +19,38 @@ export default function AboutSectionTools(): JSX.Element {
       <div className="grid grid-flow-col grid-rows-1 place-content-center gap-5">
         <AboutSectionTool
           icon={SiJavascript}
-          href="https://developer.mozilla.org/docs/Web/JavaScript"
+          href="https://developer.mozilla.org/docs/Web/JavaScript/"
           inlineText="JavaScript"
         />
 
         <AboutSectionTool
-          icon={SiReact}
-          href="https://react.dev/"
-          inlineText="React"
+          icon={SiTypescript}
+          href="https://www.typescriptlang.org/"
+          inlineText="TypeScript"
         />
 
         <AboutSectionTool
-          icon={SiNextdotjs}
-          href="https://nextjs.org/"
-          inlineText="Next.JS"></AboutSectionTool>
-
-        <AboutSectionTool
-          icon={SiVuedotjs}
-          href="https://vuejs.org/"
-          inlineText="Vue.JS"
+          icon={SiNodedotjs}
+          href="https://nodejs.org/"
+          inlineText="Node.JS"
         />
 
         <AboutSectionTool
           icon={SiTailwindcss}
           href="https://tailwindcss.com/"
           inlineText="TailwindCSS"
+        />
+
+        <AboutSectionTool
+          icon={SiGit}
+          href="https://git-scm.com/"
+          inlineText="Git"
+        />
+
+        <AboutSectionTool
+          icon={SiVisualstudiocode}
+          href="https://code.visualstudio.com/"
+          inlineText="VSCode"
         />
       </div>
     </>
