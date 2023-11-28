@@ -13,6 +13,7 @@ export default function ContactSectionLink({
   return (
     <a
       className="transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
+      target="_blank"
       aria-label={name}
       href={href}>
       <Icon size="30px" />
