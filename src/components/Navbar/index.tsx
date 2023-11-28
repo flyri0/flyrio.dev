@@ -23,7 +23,7 @@ export default function Navbar(): JSX.Element {
       }`}>
       <a href="/#top">
         <img
-          className="w-10 transition hover:-translate-y-0.5"
+          className="w-10 h-10 transition hover:-translate-y-0.5"
           src="/brand.svg"
           alt="Letra F composta por figuras hexágonais."
         />
