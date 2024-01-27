@@ -1,8 +1,8 @@
 ---
-import MainLayout from '@layouts/MainLayout.astro';
+import NotFoundLayout from '@layouts/NotFoundLayout.astro';
 ---
 
-<MainLayout title="404" description="Página não encontrada">
+<NotFoundLayout title="404" description="Página não encontrada">
   <div
     class="flex h-screen w-full flex-col items-center justify-center font-spaceGrotesk">
     <h1
@@ -20,7 +20,7 @@ import MainLayout from '@layouts/MainLayout.astro';
       Voltar para o Início
     </a>
   </div>
-</MainLayout>
+</NotFoundLayout>
 
 <script>
   function randomErrorMessage() {

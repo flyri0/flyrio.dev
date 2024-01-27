@@ -30,8 +30,6 @@ export async function getStaticPaths() {
 ---
 
 <MainLayout title={project.data.title} description={project.data.description}>
-  <Navbar client:load />
-
   <div class="px-8 py-5 font-spaceGrotesk md:px-40 lg:px-52 xl:px-80">
     <Image
       src={project.data.banner.src}
@@ -73,6 +71,4 @@ export async function getStaticPaths() {
       <Content />
     </article>
   </div>
-
-  <Footer />
 </MainLayout>

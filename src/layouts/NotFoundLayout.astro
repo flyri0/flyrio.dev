@@ -1,8 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import BaseHead from '@components/BaseHead.astro';
-import Navbar from '@components/Navbar';
-import Footer from '@components/Footer';
 
 interface Props {
   title: string;
@@ -24,8 +22,6 @@ const { title, description } = Astro.props;
   </head>
   <body
     class="bg-background font-syne text-foreground scrollbar-thin scrollbar-track-accent-1 scrollbar-thumb-accent-2 scrollbar-corner-accent-2 hover:scrollbar-thumb-shadow">
-    <Navbar client:load />
       <slot />
-    <Footer />
   </body>
 </html>
